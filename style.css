@@ -1,27 +1,44 @@
 * {
     box-sizing: border-box;
-  }
+      }
 
 .body {
     display: flex;
+    flex-direction: column;
     font-size: 16px;
+    margin: 0px;
+    min-height: 100vh;
   }
 
 .header {
    display: flex;
-   background-color: red;
-  }
+   background: #698F3F;
+   height: 50px;
+   padding: 0 1rem;
+   align-items: center;
+   font-family: sans-serif;
+}
+
  .site-name {
-   align-self: center;
+  flex: 1 1 auto;
+   font-weight: bold;
+   color: white;
+   font-size: 2rem;
  }
 
- .navigation {
-
+.navigation {
+  flex: 0 1 auto;
 }
 
   .navigation-list {
-    display: flex;
-    justify-content: flex-end;
+    display: flex; 
+    list-style: none; 
+  }
+
+  .nav-link {
+    color: white;
+    text-decoration: none;
+    margin: 0 1rem; 
   }
 
 
@@ -29,24 +46,42 @@
 display: flex;
   }
 
- .main-content{
-order: 2;
+ .main-content {
+  flex: 3 0 0%;
+  padding: 0 1rem;
+  order: 2;
  }
 
 .sidebar {
-    background-color: blue;
+  background: #E7DECD;
+  flex: 1 1 0%;
+  }
+
+.sidebar-right {
+  order: 3;
 }
 
-.sidebar-right{
-    background-color: greenyellow;
-    order: 3;
+.sidebar-left {
+  order: 1;
 }
 
-.sidebar-left{
-    background-color: green;
-    order: 1;
+.sidebar-title {
+  margin-left: 1rem;
+}
+
+.sidebar-image {
+  margin: 1rem;
+}
+
+img {
+    max-width: 350px; 
+    max-width: 100%;
 }
 
 .footer {
-    background-color: red;
+    background: #804E49;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
   }
