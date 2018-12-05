@@ -86,3 +86,20 @@ img {
     color: white;
     height: 40px;
   }
+
+
+  @media screen and (max-width: 800px){
+
+.header {flex-direction: column;}
+
+.mid-section {flex-direction: column;}
+
+}
+
+@media screen and (max-width: 500px){
+
+  .navigation-list {
+   flex-direction: column; 
+  }
+  
+  }
